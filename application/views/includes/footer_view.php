@@ -8,9 +8,6 @@
         <?php endforeach; ?>
     <?php endif ?>
     <!-- begining of page level js -->
-
-    
- 
 </body>
 
 </html>

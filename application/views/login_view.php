@@ -1,13 +1,4 @@
-<?php  
-    $data['titulo_pagina']='Acceso';
-    $data['stylesheets']= array(
-        'vendors/iCheck/css/square/blue',
-        'vendors/bootstrapvalidator/css/bootstrapValidator.min',
-        'css/pages/login',
-    );
-    $this->load->view('includes/header_view', $data); 
-?>
-
+<?php $this->load->view('includes/header_view', $stylesheets);  ?>
 <div class="container">
     <div class="row vertical-offset-100">
         <div class="col-sm-6 col-sm-offset-3  col-md-5 col-md-offset-4 col-lg-4 col-lg-offset-4">
@@ -17,7 +8,7 @@
                 <a class="hiddenanchor" id="toforgot"></a>
                 <div id="wrapper">
                     <div id="login" class="animate form">
-                        <form action="index.html" id="authentication" autocomplete="on" method="post">
+                        <form  id="authentication" autocomplete="on" method="post">
                             <h3 class=" title-login">
                                 <!-- <img src="<?php //echo base_url('lib\img\Bonanza-logo.png'); ?> " alt="Logo Bonanza"> -->
                                 Bonanza</h3>
@@ -54,7 +45,7 @@
                     <div id="register" class="animate form">
                         <form action="index.html" id="register_here" autocomplete="on" method="post">
                             <h3 class="black_bg">
-                                <img src="img/logo.png" alt="josh logo">
+                                <!-- <img src="img/logo.png" alt="josh logo"> -->
                                 <br>Sign Up</h3>
                             <div class="form-group">
                                 <label style="margin-bottom:0;" for="first_name" class="youmail">
@@ -104,7 +95,7 @@
                     <div id="forgot" class="animate form">
                         <form action="index.html" id="reset_pw" autocomplete="on" method="post">
                             <h3 class="black_bg">
-                                <img src="img/logo.png" alt="josh logo">
+                                <!-- <img src="img/logo.png" alt="josh logo"> -->
                                 <br>FORGOT PASSWORD</h3>
                             <p>
                                 Enter your email address below and we'll send a special reset password link to your inbox.
@@ -129,11 +120,7 @@
         </div>
     </div>
 </div>
-<?php 
-$data['javascripts']= array(        
-    'vendors/bootstrapvalidator/js/bootstrapValidator.min',
-    'vendors/iCheck/js/icheck',
-    'js/pages/login'
-);
-$this->load->view('includes/footer_view', $data); 
+<?php
+
+$this->load->view('includes/footer_view', $javascripts);
 ?>

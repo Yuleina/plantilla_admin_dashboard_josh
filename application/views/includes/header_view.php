@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <?php if( isset($titulo_pagina) ): ?> 
+    <?php if( isset($titulo_pagina) ): ?>
         <title><?=$titulo_pagina ?> | Bonanza 2.0</title>
     <?php else: ?>
         <title>| Bonanza 2.0</title>
