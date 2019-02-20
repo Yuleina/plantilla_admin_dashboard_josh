@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <?php if( isset($titulo_pagina) ): ?>
-        <title><?=$titulo_pagina ?> | Bonanza 2.0</title>
+    <?php if( isset($meta_title) ): ?>
+        <title><?php echo $meta_title; ?> | Bonanza 2.0</title>
     <?php else: ?>
         <title>| Bonanza 2.0</title>
     <?php endif ?>
@@ -16,17 +16,17 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
     <!-- global css -->
-    <link href="<?php echo base_url("/lib/css/bootstrap.min.css"); ?>" rel="stylesheet" />
-    <link href="<?php echo base_url("/lib/css/app.css"); ?>" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url("/lib/css/bootstrap.min.css"); ?>" rel="stylesheet" />
+        <link href="<?php echo base_url("/lib/css/app.css"); ?>" rel="stylesheet" type="text/css" />
     <!-- end of global css -->
     <!--page level css -->
-    <?php if (isset($stylesheets)): ?>
-        <?php foreach ($stylesheets as $stylesheet):?>
-           <link href="<?php echo base_url('lib/'.$stylesheet); ?>.css" rel="stylesheet" type="text/css" />
-        <?php endforeach; ?>
-    <?php endif ?>
+<?php if (isset($stylesheets)): ?>
+    <?php foreach ($stylesheets as $stylesheet):?>
+        <link href="<?php echo base_url('lib/'.$stylesheet); ?>.css" rel="stylesheet" type="text/css" />
+    <?php endforeach; ?>
+<?php endif ?>
 
     <!--end of page level css-->
 </head>
 
-<body class="">
+<body class="skin-josh">

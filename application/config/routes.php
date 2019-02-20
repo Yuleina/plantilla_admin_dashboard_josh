@@ -1,8 +1,10 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-$route["login"] = 'welcome/login';
+$route["login"] = 'Welcome_controller/login';   //
 
-$route['default_controller'] = 'welcome'; //Proceso para log de usuario
+$route["home"] = 'Home_controller';
+
+$route['default_controller'] = 'Welcome_controller'; //Proceso para log de usuario
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

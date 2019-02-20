@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Welcome_controller extends CI_Controller {
 
 	public function __construct()
     {
@@ -10,14 +10,15 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
-		// redirect(base_url("login"),'refresh');
-		$this->login();
+		redirect(base_url("login"),'refresh');
+		// $this->login();
 	}
 
 	public function login()
 	{
 		$data = array();
-    	$data['titulo_pagina']='Acceso';
+		$data['title']='Acceso';
+    	$data['meta_title']='Acceso';
 		$data['stylesheets']= array(
 			'vendors/iCheck/css/square/blue',
 			'vendors/bootstrapvalidator/css/bootstrapValidator.min',
@@ -30,5 +31,10 @@ class Welcome extends CI_Controller {
 		);
 
 		$this->load->view('login_view',$data);
+	}
+	
+	public function validation()
+	{
+
 	}
 }
