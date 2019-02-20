@@ -29,4 +29,4 @@
     <!--end of page level css-->
 </head>
 
-<body class="skin-josh">
+<body class="">
